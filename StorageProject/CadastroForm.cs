@@ -1,6 +1,8 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace StorageProject
 {
@@ -27,6 +29,28 @@ namespace StorageProject
                 MessageBox.Show("Cadastro realizado com sucesso!");
                 this.Close();
             }
+        }
+
+        private void txtUsuario_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtUsuario.Text = "";   
+        }
+
+        private void txtRE_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtRE.Text = "";
+        }
+
+        private void txtSenha_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtSenha.Text = "";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
         }
     }
 }

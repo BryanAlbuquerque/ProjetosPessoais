@@ -37,5 +37,12 @@ namespace StorageProject
             baixaSistema.Show();    
             this.Hide();
         }
+
+        private void btnEnd_Click(object sender, EventArgs e)
+        {
+            Endereco endereco = new Endereco();
+            endereco.Show();
+            this.Hide();
+        }
     }
 }

@@ -38,6 +38,7 @@
             // btnEntrada
             // 
             this.btnEntrada.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrada.Location = new System.Drawing.Point(301, 173);
             this.btnEntrada.Name = "btnEntrada";
             this.btnEntrada.Size = new System.Drawing.Size(155, 36);
@@ -49,6 +50,7 @@
             // btnGestao
             // 
             this.btnGestao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGestao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGestao.Location = new System.Drawing.Point(301, 118);
             this.btnGestao.Name = "btnGestao";
             this.btnGestao.Size = new System.Drawing.Size(155, 36);
@@ -60,23 +62,26 @@
             // btnBaixa
             // 
             this.btnBaixa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBaixa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBaixa.Location = new System.Drawing.Point(301, 228);
             this.btnBaixa.Name = "btnBaixa";
             this.btnBaixa.Size = new System.Drawing.Size(155, 36);
             this.btnBaixa.TabIndex = 3;
-            this.btnBaixa.Text = "Baixa Sistema";
+            this.btnBaixa.Text = "Baixa";
             this.btnBaixa.UseVisualStyleBackColor = true;
             this.btnBaixa.Click += new System.EventHandler(this.btnBaixa_Click);
             // 
             // btnEnd
             // 
             this.btnEnd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnd.Location = new System.Drawing.Point(301, 284);
             this.btnEnd.Name = "btnEnd";
             this.btnEnd.Size = new System.Drawing.Size(155, 36);
             this.btnEnd.TabIndex = 4;
             this.btnEnd.Text = "Movimentação (Endereçamento)";
             this.btnEnd.UseVisualStyleBackColor = true;
+            this.btnEnd.Click += new System.EventHandler(this.btnEnd_Click);
             // 
             // btnVoltar
             // 
@@ -86,7 +91,7 @@
             this.btnVoltar.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.btnVoltar.Location = new System.Drawing.Point(12, 12);
             this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(75, 34);
+            this.btnVoltar.Size = new System.Drawing.Size(102, 36);
             this.btnVoltar.TabIndex = 0;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = false;

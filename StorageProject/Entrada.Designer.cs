@@ -51,15 +51,15 @@
             this.btnEnviar = new System.Windows.Forms.Button();
             this.txtREColab = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.bntVoltar = new System.Windows.Forms.Button();
             this.dtData = new System.Windows.Forms.DateTimePicker();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(319, 29);
+            this.label1.Location = new System.Drawing.Point(333, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(156, 20);
             this.label1.TabIndex = 0;
@@ -221,6 +221,7 @@
             // 
             // btnEnviar
             // 
+            this.btnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnviar.Location = new System.Drawing.Point(337, 315);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(138, 28);
@@ -245,16 +246,6 @@
             this.label12.TabIndex = 26;
             this.label12.Text = "RE do Colaborador";
             // 
-            // bntVoltar
-            // 
-            this.bntVoltar.Location = new System.Drawing.Point(12, 29);
-            this.bntVoltar.Name = "bntVoltar";
-            this.bntVoltar.Size = new System.Drawing.Size(75, 23);
-            this.bntVoltar.TabIndex = 27;
-            this.bntVoltar.Text = "Voltar";
-            this.bntVoltar.UseVisualStyleBackColor = true;
-            this.bntVoltar.Click += new System.EventHandler(this.bntVoltar_Click);
-            // 
             // dtData
             // 
             this.dtData.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -262,16 +253,26 @@
             this.dtData.Name = "dtData";
             this.dtData.Size = new System.Drawing.Size(99, 20);
             this.dtData.TabIndex = 28;
-            this.dtData.Value = new System.DateTime(2025, 8, 6, 12, 39, 23, 0);
-            this.dtData.ValueChanged += new System.EventHandler(this.dtData_ValueChanged);
+            this.dtData.Value = new System.DateTime(2025, 8, 7, 0, 0, 0, 0);
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(12, 12);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(161, 53);
+            this.btnVoltar.TabIndex = 29;
+            this.btnVoltar.Text = "Voltar para tela Principal";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // Entrada
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.dtData);
-            this.Controls.Add(this.bntVoltar);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txtREColab);
             this.Controls.Add(this.btnEnviar);
@@ -297,6 +298,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Entrada";
             this.Text = "Entrada";
+            this.Load += new System.EventHandler(this.Entrada_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -327,7 +329,7 @@
         private System.Windows.Forms.Button btnEnviar;
         private System.Windows.Forms.TextBox txtREColab;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button bntVoltar;
         private System.Windows.Forms.DateTimePicker dtData;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

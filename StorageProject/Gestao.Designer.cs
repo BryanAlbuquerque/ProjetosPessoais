@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnVoltar = new System.Windows.Forms.Button();
             this.dataGridGestao = new System.Windows.Forms.DataGridView();
             this.clnEnd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnPL = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,18 +42,9 @@
             this.clnCon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnQtdeAtual = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnColaborador = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridGestao)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnVoltar
-            // 
-            this.btnVoltar.Location = new System.Drawing.Point(539, 547);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(75, 23);
-            this.btnVoltar.TabIndex = 0;
-            this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
-            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // dataGridGestao
             // 
@@ -73,7 +63,7 @@
             this.clnCon,
             this.clnQtdeAtual,
             this.clnColaborador});
-            this.dataGridGestao.Location = new System.Drawing.Point(1, 1);
+            this.dataGridGestao.Location = new System.Drawing.Point(3, 57);
             this.dataGridGestao.Name = "dataGridGestao";
             this.dataGridGestao.Size = new System.Drawing.Size(1343, 118);
             this.dataGridGestao.TabIndex = 4;
@@ -169,13 +159,24 @@
             this.clnColaborador.Name = "clnColaborador";
             this.clnColaborador.ReadOnly = true;
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(3, 3);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(161, 53);
+            this.btnVoltar.TabIndex = 30;
+            this.btnVoltar.Text = "Voltar para tela Principal";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click_1);
+            // 
             // Gestao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1349, 672);
-            this.Controls.Add(this.dataGridGestao);
             this.Controls.Add(this.btnVoltar);
+            this.Controls.Add(this.dataGridGestao);
             this.Name = "Gestao";
             this.Text = "GESTÃO DO ESTOQUE";
             this.Load += new System.EventHandler(this.Gestao_Load);
@@ -185,8 +186,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnVoltar;
         public System.Windows.Forms.DataGridView dataGridGestao;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnEnd;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnPL;
@@ -201,5 +200,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clnCon;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnQtdeAtual;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnColaborador;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

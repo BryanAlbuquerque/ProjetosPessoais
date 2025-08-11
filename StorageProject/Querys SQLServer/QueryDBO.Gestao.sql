@@ -31,6 +31,6 @@ ADD RE_Colaborador INT NOT NULL
 
 
 UPDATE Gestao
-SET DataEntrada = '06/08/2025'
-WHERE PalletID = 304490;
+SET Quantidade = 125
+WHERE PalletID = 304491;
 

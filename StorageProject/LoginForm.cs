@@ -15,9 +15,8 @@ namespace StorageProject
         {
             string usuario = txtUsuario.Text;
             string senha = txtSenha.Text;
-            int re = int.Parse(txtRE.Text);
 
-            if (UserStorage.Autenticar(usuario, senha, re))
+            if (UserStorage.Autenticar(usuario, senha))
             {
                 TelaPrincipal tela = new TelaPrincipal();
                 tela.Show();
@@ -28,7 +27,6 @@ namespace StorageProject
             {
                 MessageBox.Show("Usuario ou senha incorretos!");
             }
-
         }
 
         //Evento que direciona a tela de cadastro
@@ -36,6 +34,18 @@ namespace StorageProject
         {
             CadastroForm cadastro = new CadastroForm();
             cadastro.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void lblAdm_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Admin admin = new Admin();
+            admin.Show();
             this.Hide();
         }
     }
