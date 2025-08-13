@@ -37,16 +37,22 @@ namespace StorageProject
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void lblAdm_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Admin admin = new Admin();
             admin.Show();
             this.Hide();
+        }
+
+        private void txtUsuario_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtUsuario.Text = "";
+        }
+
+        private void txtSenha_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtSenha.Text = "";
         }
     }
 }

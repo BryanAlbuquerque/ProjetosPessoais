@@ -1,4 +1,4 @@
-USE StorageDB
+USE Storage
 GO
 
 CREATE TABLE Gestao(
@@ -17,7 +17,7 @@ CREATE TABLE Gestao(
 	RE_Colaborador INT NOT NULL
 )
 
-DROP TABLE Gestao
+
 
 SELECT * FROM Gestao
 

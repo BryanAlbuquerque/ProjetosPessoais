@@ -1,3 +1,5 @@
+USE Storage
+
 CREATE TABLE Usuarios(
 RE_Colaborador INT PRIMARY KEY NOT NULL,
 Usuario VARCHAR(20) NOT NULL,

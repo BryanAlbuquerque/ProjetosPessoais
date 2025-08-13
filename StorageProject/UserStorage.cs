@@ -7,7 +7,7 @@ namespace StorageProject
     {
         // String para fazer a conexão com a DB
         private static string connectionString =
-            "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=StorageDB;Trusted_Connection=True;TrustServerCertificate=true;";
+            "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=Storage;Trusted_Connection=True;TrustServerCertificate=true;";
 
         // Metodo que faz as Query e a Parte lógica de conexão e cadastro usuário
         public static bool CadastrarUsuario(string usuario, string senha, int re)
