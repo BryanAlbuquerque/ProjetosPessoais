@@ -11,16 +11,6 @@ namespace StorageProject
             InitializeComponent();
         }
 
-        private void txtEmail_MouseClick(object sender, MouseEventArgs e)
-        {
-            txtEmail.Text = "";
-        }
-
-        private void txtSenha_MouseClick(object sender, MouseEventArgs e)
-        {
-            txtSenha.Text = "";
-        }
-
         private void btnSalvar_Click(object sender, EventArgs e)
         {
            string email = txtEmail.Text;
@@ -32,6 +22,13 @@ namespace StorageProject
                 principal.Show();
                 this.Hide();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Hide();
         }
     }
 }

@@ -89,7 +89,7 @@
             this.btnVoltar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnVoltar.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btnVoltar.Location = new System.Drawing.Point(12, 12);
+            this.btnVoltar.Location = new System.Drawing.Point(539, 139);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(102, 36);
             this.btnVoltar.TabIndex = 0;
@@ -101,14 +101,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(807, 450);
             this.Controls.Add(this.btnEnd);
             this.Controls.Add(this.btnBaixa);
             this.Controls.Add(this.btnGestao);
             this.Controls.Add(this.btnEntrada);
             this.Controls.Add(this.btnVoltar);
             this.Name = "TelaPrincipal";
-            this.Text = "TelaPrincipal";
+            this.Text = "Tela Principal";
             this.ResumeLayout(false);
 
         }

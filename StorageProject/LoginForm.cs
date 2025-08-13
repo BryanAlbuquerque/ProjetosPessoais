@@ -44,15 +44,5 @@ namespace StorageProject
             admin.Show();
             this.Hide();
         }
-
-        private void txtUsuario_MouseClick(object sender, MouseEventArgs e)
-        {
-            txtUsuario.Text = "";
-        }
-
-        private void txtSenha_MouseClick(object sender, MouseEventArgs e)
-        {
-            txtSenha.Text = "";
-        }
     }
 }

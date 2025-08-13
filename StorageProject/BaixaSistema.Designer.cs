@@ -115,7 +115,7 @@
             this.Controls.Add(this.txtQtde);
             this.Controls.Add(this.btnVoltar);
             this.Name = "BaixaSistema";
-            this.Text = "BaixaSistema";
+            this.Text = "Baixa Sistemica";
             this.ResumeLayout(false);
             this.PerformLayout();
 
