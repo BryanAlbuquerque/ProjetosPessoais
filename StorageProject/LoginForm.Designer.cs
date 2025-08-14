@@ -144,7 +144,6 @@
             this.lblAdm.TabStop = true;
             this.lblAdm.Text = "Login como ADM";
             this.lblAdm.VisitedLinkColor = System.Drawing.Color.Black;
-            this.lblAdm.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblAdm_LinkClicked);
             // 
             // listBox1
             // 

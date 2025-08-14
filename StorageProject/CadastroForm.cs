@@ -1,8 +1,5 @@
-﻿using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Drawing;
+﻿using System;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace StorageProject
 {
@@ -13,37 +10,36 @@ namespace StorageProject
             InitializeComponent();
         }
 
-        //Evento que realiza o cadastro a partir do (UserStorage)
+        // Evento que realiza o cadastro usando o UserStorage
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            string usuario = txtUsuario.Text;
+            string usuario = txtUsuario.Text.Trim();
             string senha = txtSenha.Text;
-            int re = int.Parse(txtRE.Text);
+            string reTexto = txtRE.Text.Trim();
 
-            if (string.IsNullOrEmpty(txtUsuario.Text))
+            if (string.IsNullOrEmpty(usuario) || string.IsNullOrEmpty(senha) || string.IsNullOrEmpty(reTexto))
             {
-                MessageBox.Show("Erro! Existem espaços em branco!");
+                MessageBox.Show("Erro! Preencha todos os campos.");
+                return;
             }
-            else if (UserStorage.CadastrarUsuario(usuario, senha, re))
+
+            if (!int.TryParse(reTexto, out int re))
+            {
+                MessageBox.Show("Erro! O RE deve conter apenas números.");
+                return;
+            }
+
+            bool cadastroOk = UserStorage.CadastrarUsuario(usuario, senha, re);
+
+            if (cadastroOk)
             {
                 MessageBox.Show("Cadastro realizado com sucesso!");
-                this.Close();
+                this.Hide();
             }
-        }
-
-        private void txtUsuario_MouseClick(object sender, MouseEventArgs e)
-        {
-            txtUsuario.Text = "";   
-        }
-
-        private void txtRE_MouseClick(object sender, MouseEventArgs e)
-        {
-            txtRE.Text = "";
-        }
-
-        private void txtSenha_MouseClick(object sender, MouseEventArgs e)
-        {
-            txtSenha.Text = "";
+            else
+            {
+                MessageBox.Show("Cadastro não realizado! Verifique se o RE existe e está ativo.");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

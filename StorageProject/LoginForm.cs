@@ -10,10 +10,10 @@ namespace StorageProject
             InitializeComponent();
         }
 
-        //Evento que faz o login Usando o Atutenticas do (User Storage)
+        // Evento que faz o login usando o UserStorage
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string usuario = txtUsuario.Text;
+            string usuario = txtUsuario.Text.Trim();
             string senha = txtSenha.Text;
 
             if (UserStorage.Autenticar(usuario, senha))
@@ -22,26 +22,17 @@ namespace StorageProject
                 tela.Show();
                 this.Hide();
             }
-
             else
             {
-                MessageBox.Show("Usuario ou senha incorretos!");
+                MessageBox.Show("Usuário ou senha incorretos, ou conta inativa!");
             }
         }
 
-        //Evento que direciona a tela de cadastro
+        // Evento que direciona para a tela de cadastro
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             CadastroForm cadastro = new CadastroForm();
             cadastro.Show();
-            this.Hide();
-        }
-
-
-        private void lblAdm_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            Admin admin = new Admin();
-            admin.Show();
             this.Hide();
         }
     }

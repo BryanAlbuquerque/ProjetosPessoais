@@ -32,7 +32,7 @@
             this.btnSalvar = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtRE = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
@@ -86,19 +86,18 @@
             this.txtRE.Name = "txtRE";
             this.txtRE.Size = new System.Drawing.Size(166, 30);
             this.txtRE.TabIndex = 40;
-            this.txtRE.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txtRE_MouseClick);
             // 
-            // button1
+            // btnVoltar
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(351, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(84, 27);
-            this.button1.TabIndex = 44;
-            this.button1.Text = "Voltar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnVoltar.BackColor = System.Drawing.Color.Transparent;
+            this.btnVoltar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(351, 2);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(84, 27);
+            this.btnVoltar.TabIndex = 44;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
@@ -250,7 +249,7 @@
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.txtSenha);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.txtRE);
             this.Controls.Add(this.btnSalvar);
@@ -269,7 +268,7 @@
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox txtRE;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox listBox1;

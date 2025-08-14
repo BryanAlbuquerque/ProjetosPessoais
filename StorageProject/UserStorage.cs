@@ -1,69 +1,95 @@
-﻿using Microsoft.Data.SqlClient;
-using System;
+﻿using System;
+using System.Data;
+using Microsoft.Data.SqlClient; 
 
 namespace StorageProject
 {
-    internal class UserStorage
+    public static class UserStorage
     {
-        // String para fazer a conexão com a DB
-        private static string connectionString =
-            "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=Storage;Trusted_Connection=True;TrustServerCertificate=true;";
+               private static readonly string connectionString =
+            "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=Storage;Trusted_Connection=True;TrustServerCertificate=True";
 
-        // Metodo que faz as Query e a Parte lógica de conexão e cadastro usuário
         public static bool CadastrarUsuario(string usuario, string senha, int re)
         {
-            using (var conexao = new SqlConnection(connectionString)) // Variavel que chama a conexão acima
-            {
-                //Query que joga as informações no SQL Server
-                string query = "INSERT INTO Usuarios (Usuario, Senha, RE_Colaborador) VALUES (@usuario, @senha, @re)";
-                var comando = new SqlCommand(query, conexao);
-                comando.Parameters.AddWithValue("@usuario", usuario);
-                comando.Parameters.AddWithValue("@senha", senha);
-                comando.Parameters.AddWithValue("@re", re);
+            if (string.IsNullOrWhiteSpace(usuario) || string.IsNullOrWhiteSpace(senha))
+                return false;
 
+            usuario = usuario.Trim();
+
+            using (var conexao = new SqlConnection(connectionString))
+            {
                 conexao.Open();
-                try
+
+                // 1) Verifica se o RE existe e está ativo na tabela Funcionarios
+                const string sqlVerificaReAtivo = @"
+                    SELECT 1
+                    FROM Funcionarios
+                    WHERE ID_RegistroEmpresarial = @re
+                    AND Situacao = 'Ativo';";
+
+                using (var cmdVerifica = new SqlCommand(sqlVerificaReAtivo, conexao))
                 {
-                    comando.ExecuteNonQuery();
-                    return true;
-                }
-                catch (SqlException ex)
-                {
-                    if (ex.Number == 2627) // Usuário duplicado
+                    cmdVerifica.Parameters.Add("@re", SqlDbType.Int).Value = re;
+
+                    var ok = cmdVerifica.ExecuteScalar();
+                    if (ok == null) // não existe RE ou não está ativo
                         return false;
-                    throw;
+                }
+
+                // 2) Insere o usuário na tabela Usuarios
+                const string sqlInsert = @"
+                    INSERT INTO Usuarios (Usuario, Senha, ID_RegistroEmpresarial)
+                    VALUES (@usuario, @senha, @re);";
+
+                using (var cmdInsert = new SqlCommand(sqlInsert, conexao))
+                {
+                    cmdInsert.Parameters.Add("@usuario", SqlDbType.VarChar, 100).Value = usuario;
+                    cmdInsert.Parameters.Add("@senha", SqlDbType.VarChar, 100).Value = senha; // se desejar, substitua por um HASH
+                    cmdInsert.Parameters.Add("@re", SqlDbType.Int).Value = re;
+
+                    try
+                    {
+                        cmdInsert.ExecuteNonQuery();
+                        return true;
+                    }
+                    catch (SqlException ex)
+                    {
+                        // 2627 e 2601 = violação de UNIQUE (ex.: Usuario duplicado)
+                        if (ex.Number == 2627 || ex.Number == 2601)
+                            return false;
+                        throw;
+                    }
                 }
             }
         }
 
-        //Metodo usada para autenticar e fazer o login
         public static bool Autenticar(string usuario, string senha)
         {
+            if (string.IsNullOrWhiteSpace(usuario) || string.IsNullOrWhiteSpace(senha))
+                return false;
+
+            usuario = usuario.Trim();
+
             using (var conexao = new SqlConnection(connectionString))
             {
-                string query = "SELECT COUNT(*) FROM Usuarios WHERE Usuario = @usuario AND Senha = @senha";
-                var comando = new SqlCommand(query, conexao);
-                comando.Parameters.AddWithValue("@usuario", usuario);
-                comando.Parameters.AddWithValue("@senha", senha);
+                const string sqlAuth = @"
+                    SELECT 1
+                    FROM Usuarios u
+                    INNER JOIN Funcionarios f
+                    ON f.ID_RegistroEmpresarial = u.ID_RegistroEmpresarial
+                    WHERE u.Usuario = @usuario
+                    AND u.Senha = @senha
+                    AND f.Situacao = 'Ativo';";
 
-                conexao.Open();
-                int resultado = (int)comando.ExecuteScalar(); // Comando usado para fazer consulta o SQLServer
-                return resultado > 0;
-            }
-        }
+                using (var cmd = new SqlCommand(sqlAuth, conexao))
+                {
+                    cmd.Parameters.Add("@usuario", SqlDbType.VarChar, 100).Value = usuario;
+                    cmd.Parameters.Add("@senha", SqlDbType.VarChar, 100).Value = senha;
 
-        public static bool AutenticarADM(string email, int senha)
-        {
-            using (var conexao = new SqlConnection(connectionString))
-            {
-                string query = "SELECT COUNT(*) FROM Admins WHERE Email_Admin = @email AND Senha = @senha";
-                var comando = new SqlCommand(query, conexao);
-                comando.Parameters.AddWithValue("@email", email);
-                comando.Parameters.AddWithValue("@senha", senha);
-
-                conexao.Open();
-                int resultado = (int)comando.ExecuteScalar();
-                return resultado > 0; // Retorna true se encontrar registro
+                    conexao.Open();
+                    var ok = cmd.ExecuteScalar();
+                    return ok != null;
+                }
             }
         }
     }
