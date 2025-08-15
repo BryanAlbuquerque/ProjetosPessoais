@@ -20,12 +20,12 @@ namespace StorageProject
             {
                 conexao.Open();
 
-                // 1) Verifica se o RE existe e está ativo na tabela Funcionarios
+                // Verifica se o RE existe e está ativo na tabela Funcionarios
                 const string sqlVerificaReAtivo = @"
                     SELECT 1
                     FROM Funcionarios
                     WHERE ID_RegistroEmpresarial = @re
-                    AND Situacao = 'Ativo';";
+                    AND Situacao = 'Ativo'";
 
                 using (var cmdVerifica = new SqlCommand(sqlVerificaReAtivo, conexao))
                 {
@@ -36,15 +36,15 @@ namespace StorageProject
                         return false;
                 }
 
-                // 2) Insere o usuário na tabela Usuarios
+                // Insere o usuário na tabela Usuarios
                 const string sqlInsert = @"
                     INSERT INTO Usuarios (Usuario, Senha, ID_RegistroEmpresarial)
-                    VALUES (@usuario, @senha, @re);";
+                    VALUES (@usuario, @senha, @re)";
 
                 using (var cmdInsert = new SqlCommand(sqlInsert, conexao))
                 {
                     cmdInsert.Parameters.Add("@usuario", SqlDbType.VarChar, 100).Value = usuario;
-                    cmdInsert.Parameters.Add("@senha", SqlDbType.VarChar, 100).Value = senha; // se desejar, substitua por um HASH
+                    cmdInsert.Parameters.Add("@senha", SqlDbType.VarChar, 100).Value = senha;
                     cmdInsert.Parameters.Add("@re", SqlDbType.Int).Value = re;
 
                     try
@@ -54,8 +54,7 @@ namespace StorageProject
                     }
                     catch (SqlException ex)
                     {
-                        // 2627 e 2601 = violação de UNIQUE (ex.: Usuario duplicado)
-                        if (ex.Number == 2627 || ex.Number == 2601)
+                       if (ex.Number == 2627 || ex.Number == 2601)
                             return false;
                         throw;
                     }

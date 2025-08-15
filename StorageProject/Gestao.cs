@@ -8,39 +8,17 @@ namespace StorageProject
     public partial class Gestao : Form
     {
 
-        private ConnectionManagement CN = new ConnectionManagement();
+        private GestaoDB DB = new GestaoDB();
         public Gestao()
         {
             InitializeComponent();
         }
 
-        //Classe para fazer conexão com a DataBase
-        public class ConnectionManagement
-        {
-            // String para fazer a conexão com a DB
-            private static string connectionString =
-               "Server=DESKTOP-BRYAN\\SQLEXPRESS;Database=StorageDB;Trusted_Connection=True;TrustServerCertificate=true;";
-
-            public DataTable CarregarDados()
-            {
-                DataTable dt = new DataTable();
-
-                using (SqlConnection conn = new SqlConnection(connectionString))
-                {
-                    conn.Open();
-                    string query = "SELECT Endereco, PalletID, DataEntrada, NomeInsumo, Fornecedor, Quantidade, ValorUnitario, ValorTotal, NumeroNotaFiscal, NumeroPedido, Consumo, QuantidadeAtual, RE_Colaborador FROM Gestao";
-                    SqlDataAdapter da = new SqlDataAdapter(query, conn);
-                    da.Fill(dt);
-                }
-
-                return dt;
-            }
-        }
-
         private void Gestao_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             dataGridGestao.AutoGenerateColumns = false;
-            dataGridGestao.DataSource = CN.CarregarDados();
+            dataGridGestao.DataSource = DB.CarregarDados();
 
         }
 

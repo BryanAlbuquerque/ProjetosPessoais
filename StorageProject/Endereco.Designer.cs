@@ -41,7 +41,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(256, 49);
+            this.label1.Location = new System.Drawing.Point(256, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(234, 20);
             this.label1.TabIndex = 0;
@@ -83,7 +83,7 @@
             // 
             // btnEnviar
             // 
-            this.btnEnviar.Location = new System.Drawing.Point(306, 267);
+            this.btnEnviar.Location = new System.Drawing.Point(307, 250);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(124, 25);
             this.btnEnviar.TabIndex = 7;

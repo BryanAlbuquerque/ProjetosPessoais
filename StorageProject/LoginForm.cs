@@ -10,7 +10,6 @@ namespace StorageProject
             InitializeComponent();
         }
 
-        // Evento que faz o login usando o UserStorage
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string usuario = txtUsuario.Text.Trim();
@@ -28,7 +27,6 @@ namespace StorageProject
             }
         }
 
-        // Evento que direciona para a tela de cadastro
         private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             CadastroForm cadastro = new CadastroForm();

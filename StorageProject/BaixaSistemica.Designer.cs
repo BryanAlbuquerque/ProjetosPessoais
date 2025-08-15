@@ -1,6 +1,6 @@
 ﻿namespace StorageProject
 {
-    partial class BaixaSistema
+    partial class BaixaSistemica
     {
         /// <summary>
         /// Required designer variable.
@@ -34,7 +34,6 @@
             this.txtEnviar = new System.Windows.Forms.Button();
             this.txtPl = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnSair = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnVoltar
@@ -91,30 +90,18 @@
             this.label3.TabIndex = 9;
             this.label3.Text = "PalletID";
             // 
-            // btnSair
-            // 
-            this.btnSair.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(635, 13);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(153, 38);
-            this.btnSair.TabIndex = 10;
-            this.btnSair.Text = "Sair";
-            this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
-            // 
-            // BaixaSistema
+            // BaixaSistemica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtPl);
             this.Controls.Add(this.txtEnviar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtQtde);
             this.Controls.Add(this.btnVoltar);
-            this.Name = "BaixaSistema";
+            this.Name = "BaixaSistemica";
             this.Text = "Baixa Sistemica";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -129,6 +116,5 @@
         private System.Windows.Forms.Button txtEnviar;
         private System.Windows.Forms.TextBox txtPl;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnSair;
     }
 }

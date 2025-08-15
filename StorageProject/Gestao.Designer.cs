@@ -28,7 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gestao));
             this.dataGridGestao = new System.Windows.Forms.DataGridView();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.clnEnd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnPL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnData = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,12 +47,13 @@
             this.clnCon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnQtdeAtual = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clnColaborador = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridGestao)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridGestao
             // 
+            this.dataGridGestao.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridGestao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridGestao.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clnEnd,
@@ -63,130 +69,156 @@
             this.clnCon,
             this.clnQtdeAtual,
             this.clnColaborador});
-            this.dataGridGestao.Location = new System.Drawing.Point(3, 57);
+            this.dataGridGestao.Location = new System.Drawing.Point(99, 49);
             this.dataGridGestao.Name = "dataGridGestao";
-            this.dataGridGestao.Size = new System.Drawing.Size(1343, 118);
+            this.dataGridGestao.Size = new System.Drawing.Size(1333, 118);
             this.dataGridGestao.TabIndex = 4;
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(1337, 9);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(93, 27);
+            this.btnVoltar.TabIndex = 30;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click_1);
+            // 
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.Color.Navy;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(-1, 1);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(99, 667);
+            this.listBox1.TabIndex = 31;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(189, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(229, 28);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "Gestão do Estoque";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(104, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(79, 42);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 33;
+            this.pictureBox1.TabStop = false;
             // 
             // clnEnd
             // 
             this.clnEnd.DataPropertyName = "Endereco";
             this.clnEnd.HeaderText = "ENDEREÇO";
             this.clnEnd.Name = "clnEnd";
-            this.clnEnd.ReadOnly = true;
+            this.clnEnd.Width = 90;
             // 
             // clnPL
             // 
             this.clnPL.DataPropertyName = "PalletID";
             this.clnPL.HeaderText = "PALLET ID";
             this.clnPL.Name = "clnPL";
-            this.clnPL.ReadOnly = true;
             // 
             // clnData
             // 
             this.clnData.DataPropertyName = "DataEntrada";
             this.clnData.HeaderText = "DATA DE ENTRADA";
             this.clnData.Name = "clnData";
-            this.clnData.ReadOnly = true;
             // 
             // clnNomeIn
             // 
             this.clnNomeIn.DataPropertyName = "NomeInsumo";
             this.clnNomeIn.HeaderText = "NOME DO INSUMO";
             this.clnNomeIn.Name = "clnNomeIn";
-            this.clnNomeIn.ReadOnly = true;
             // 
             // clnForn
             // 
             this.clnForn.DataPropertyName = "Fornecedor";
             this.clnForn.HeaderText = "FORNECEDOR";
             this.clnForn.Name = "clnForn";
-            this.clnForn.ReadOnly = true;
             // 
             // clnQtdeIni
             // 
             this.clnQtdeIni.DataPropertyName = "Quantidade";
             this.clnQtdeIni.HeaderText = "QUANTIDADE";
             this.clnQtdeIni.Name = "clnQtdeIni";
-            this.clnQtdeIni.ReadOnly = true;
             // 
             // clnValorUni
             // 
             this.clnValorUni.DataPropertyName = "ValorUnitario";
             this.clnValorUni.HeaderText = "VALOR UNITÁRIO";
             this.clnValorUni.Name = "clnValorUni";
-            this.clnValorUni.ReadOnly = true;
             // 
             // clnValorTotal
             // 
             this.clnValorTotal.DataPropertyName = "ValorTotal";
             this.clnValorTotal.HeaderText = "VALOR TOTAL";
             this.clnValorTotal.Name = "clnValorTotal";
-            this.clnValorTotal.ReadOnly = true;
             // 
             // clnNF
             // 
             this.clnNF.DataPropertyName = "NumeroNotaFiscal";
             this.clnNF.HeaderText = "NÚMERO DA NOTA FISCAL";
             this.clnNF.Name = "clnNF";
-            this.clnNF.ReadOnly = true;
             // 
             // clnNP
             // 
             this.clnNP.DataPropertyName = "NumeroPedido";
             this.clnNP.HeaderText = "NÚMERO DO PEDIDO";
             this.clnNP.Name = "clnNP";
-            this.clnNP.ReadOnly = true;
             // 
             // clnCon
             // 
             this.clnCon.DataPropertyName = "Consumo";
             this.clnCon.HeaderText = "CONSUMO";
             this.clnCon.Name = "clnCon";
-            this.clnCon.ReadOnly = true;
             // 
             // clnQtdeAtual
             // 
             this.clnQtdeAtual.DataPropertyName = "QuantidadeAtual";
             this.clnQtdeAtual.HeaderText = "QUANTIDADE ATUAL";
             this.clnQtdeAtual.Name = "clnQtdeAtual";
-            this.clnQtdeAtual.ReadOnly = true;
             // 
             // clnColaborador
             // 
-            this.clnColaborador.DataPropertyName = "RE_Colaborador";
+            this.clnColaborador.DataPropertyName = "ID_RegistroEmpresarial";
             this.clnColaborador.HeaderText = "RE DO COLABORADOR";
             this.clnColaborador.Name = "clnColaborador";
-            this.clnColaborador.ReadOnly = true;
-            // 
-            // btnVoltar
-            // 
-            this.btnVoltar.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(3, 3);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(161, 53);
-            this.btnVoltar.TabIndex = 30;
-            this.btnVoltar.Text = "Voltar para tela Principal";
-            this.btnVoltar.UseVisualStyleBackColor = true;
-            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click_1);
             // 
             // Gestao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1349, 672);
+            this.ClientSize = new System.Drawing.Size(1433, 672);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.dataGridGestao);
+            this.Controls.Add(this.listBox1);
+            this.MinimizeBox = false;
             this.Name = "Gestao";
-            this.Text = "GESTÃO DO ESTOQUE";
             this.Load += new System.EventHandler(this.Gestao_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridGestao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
         public System.Windows.Forms.DataGridView dataGridGestao;
+        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnEnd;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnPL;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnData;
@@ -200,6 +232,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clnCon;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnQtdeAtual;
         private System.Windows.Forms.DataGridViewTextBoxColumn clnColaborador;
-        private System.Windows.Forms.Button btnVoltar;
     }
 }

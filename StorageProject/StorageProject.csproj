@@ -160,11 +160,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaixaSistema.cs">
+    <Compile Include="BaixasDB.cs" />
+    <Compile Include="BaixaSistemica.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BaixaSistema.Designer.cs">
-      <DependentUpon>BaixaSistema.cs</DependentUpon>
+    <Compile Include="BaixaSistemica.Designer.cs">
+      <DependentUpon>BaixaSistemica.cs</DependentUpon>
     </Compile>
     <Compile Include="CadastroForm.cs">
       <SubType>Form</SubType>
@@ -178,18 +179,21 @@
     <Compile Include="Endereco.Designer.cs">
       <DependentUpon>Endereco.cs</DependentUpon>
     </Compile>
+    <Compile Include="EnderecoDB.cs" />
     <Compile Include="Entrada.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Entrada.Designer.cs">
       <DependentUpon>Entrada.cs</DependentUpon>
     </Compile>
+    <Compile Include="EntradaDB.cs" />
     <Compile Include="Gestao.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Gestao.Designer.cs">
       <DependentUpon>Gestao.cs</DependentUpon>
     </Compile>
+    <Compile Include="GestaoDB.cs" />
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,8 +209,8 @@
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="UserStorage.cs" />
-    <EmbeddedResource Include="BaixaSistema.resx">
-      <DependentUpon>BaixaSistema.cs</DependentUpon>
+    <EmbeddedResource Include="BaixaSistemica.resx">
+      <DependentUpon>BaixaSistemica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroForm.resx">
       <DependentUpon>CadastroForm.cs</DependentUpon>

@@ -1,3 +1,5 @@
+CREATE DATABASE Storage
+
 USE Storage
 GO
 
@@ -8,14 +10,12 @@ CPF CHAR(11) NOT NULL UNIQUE,
 RG VARCHAR (15) NOT NULL UNIQUE,
 Data_Nascimento DATE NOT NULL,
 Email NVARCHAR(50) NOT NULL,
-Telefone INT NOT NULL,
+Telefone BIGINT NOT NULL,
 Endereco NVARCHAR (50) NOT NULL,
 Cargo VARCHAR(50) NOT NULL,
 Situacao VARCHAR(20)
 )
 
-ALTER TABLE Funcionarios
-ALTER COLUMN Telefone BIGINT NOT NULL;
 
 INSERT INTO Funcionarios
 (Nome, CPF, RG, Data_Nascimento, Email, Telefone, Endereco, Cargo, Situacao)

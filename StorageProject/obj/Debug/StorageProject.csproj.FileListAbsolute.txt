@@ -397,7 +397,6 @@ C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\bin\Debug\zh-Han
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageProject.csproj.AssemblyReference.cache
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageProject.csproj.SuggestedBindingRedirects.cache
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageProject.exe.config
-C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageProject.BaixaSistema.resources
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageProject.CadastroForm.resources
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageProject.Endereco.resources
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageProject.Entrada.resources
@@ -410,3 +409,4 @@ C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\Storag
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageP.1E6C7AB5.Up2Date
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageProject.exe
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageProject.pdb
+C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageProject.BaixaSistemica.resources

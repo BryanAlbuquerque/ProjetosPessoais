@@ -33,7 +33,7 @@ namespace StorageProject
 
         private void btnBaixa_Click(object sender, EventArgs e)
         {
-            BaixaSistema baixaSistema = new BaixaSistema();
+            BaixaSistemica baixaSistema = new BaixaSistemica();
             baixaSistema.Show();    
             this.Hide();
         }

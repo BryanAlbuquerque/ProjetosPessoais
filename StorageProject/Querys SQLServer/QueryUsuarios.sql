@@ -5,3 +5,7 @@ Senha NVARCHAR (50)
 )
 
 SELECT * FROM Usuarios
+
+
+
+
