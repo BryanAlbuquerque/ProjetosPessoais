@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\bryan\\Documents\\GitHub\\ProjetosPessoais\\StorageProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8BA690BD-9DF6-4585-A80D-C2566ED22188}|StorageProject.csproj|c:\\users\\bryan\\documents\\github\\projetospessoais\\storageproject\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BA690BD-9DF6-4585-A80D-C2566ED22188}|StorageProject.csproj|solutionrelative:endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8BA690BD-9DF6-4585-A80D-C2566ED22188}|StorageProject.csproj|c:\\users\\bryan\\documents\\github\\projetospessoais\\storageproject\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BA690BD-9DF6-4585-A80D-C2566ED22188}|StorageProject.csproj|solutionrelative:telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8BA690BD-9DF6-4585-A80D-C2566ED22188}|StorageProject.csproj|c:\\users\\bryan\\documents\\github\\projetospessoais\\storageproject\\endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8BA690BD-9DF6-4585-A80D-C2566ED22188}|StorageProject.csproj|solutionrelative:endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BA690BD-9DF6-4585-A80D-C2566ED22188}|StorageProject.csproj|c:\\users\\bryan\\documents\\github\\projetospessoais\\storageproject\\entradadb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BA690BD-9DF6-4585-A80D-C2566ED22188}|StorageProject.csproj|solutionrelative:entradadb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BA690BD-9DF6-4585-A80D-C2566ED22188}|StorageProject.csproj|c:\\users\\bryan\\documents\\github\\projetospessoais\\storageproject\\gestao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BA690BD-9DF6-4585-A80D-C2566ED22188}|StorageProject.csproj|solutionrelative:gestao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BA690BD-9DF6-4585-A80D-C2566ED22188}|StorageProject.csproj|c:\\users\\bryan\\documents\\github\\projetospessoais\\storageproject\\entrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8BA690BD-9DF6-4585-A80D-C2566ED22188}|StorageProject.csproj|solutionrelative:entrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8BA690BD-9DF6-4585-A80D-C2566ED22188}|StorageProject.csproj|c:\\users\\bryan\\documents\\github\\projetospessoais\\storageproject\\entrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8BA690BD-9DF6-4585-A80D-C2566ED22188}|StorageProject.csproj|solutionrelative:entrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8BA690BD-9DF6-4585-A80D-C2566ED22188}|StorageProject.csproj|c:\\users\\bryan\\documents\\github\\projetospessoais\\storageproject\\telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8BA690BD-9DF6-4585-A80D-C2566ED22188}|StorageProject.csproj|solutionrelative:telaprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,77 +31,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Endereco.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\GitHub\\ProjetosPessoais\\StorageProject\\Endereco.cs",
-              "RelativeDocumentMoniker": "Endereco.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\GitHub\\ProjetosPessoais\\StorageProject\\Endereco.cs",
-              "RelativeToolTip": "Endereco.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Title": "TelaPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\GitHub\\ProjetosPessoais\\StorageProject\\TelaPrincipal.cs",
+              "RelativeDocumentMoniker": "TelaPrincipal.cs",
+              "ToolTip": "C:\\Users\\bryan\\Documents\\GitHub\\ProjetosPessoais\\StorageProject\\TelaPrincipal.cs",
+              "RelativeToolTip": "TelaPrincipal.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAUwE8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T16:44:00.588Z",
+              "WhenOpened": "2025-08-16T19:57:55.41Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Endereco.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\GitHub\\ProjetosPessoais\\StorageProject\\Endereco.cs",
-              "RelativeDocumentMoniker": "Endereco.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\GitHub\\ProjetosPessoais\\StorageProject\\Endereco.cs [Design]",
-              "RelativeToolTip": "Endereco.cs [Design]",
+              "Title": "TelaPrincipal.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\GitHub\\ProjetosPessoais\\StorageProject\\TelaPrincipal.cs",
+              "RelativeDocumentMoniker": "TelaPrincipal.cs",
+              "ToolTip": "C:\\Users\\bryan\\Documents\\GitHub\\ProjetosPessoais\\StorageProject\\TelaPrincipal.cs [Design]",
+              "RelativeToolTip": "TelaPrincipal.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T16:43:56.62Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Gestao.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\GitHub\\ProjetosPessoais\\StorageProject\\Gestao.cs",
-              "RelativeDocumentMoniker": "Gestao.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\GitHub\\ProjetosPessoais\\StorageProject\\Gestao.cs",
-              "RelativeToolTip": "Gestao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T16:37:29.871Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EntradaDB.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\GitHub\\ProjetosPessoais\\StorageProject\\EntradaDB.cs",
-              "RelativeDocumentMoniker": "EntradaDB.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\GitHub\\ProjetosPessoais\\StorageProject\\EntradaDB.cs",
-              "RelativeToolTip": "EntradaDB.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAuwC4AAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T16:28:43.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Entrada.cs",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\GitHub\\ProjetosPessoais\\StorageProject\\Entrada.cs",
-              "RelativeDocumentMoniker": "Entrada.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\GitHub\\ProjetosPessoais\\StorageProject\\Entrada.cs",
-              "RelativeToolTip": "Entrada.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T16:28:24.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Entrada.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\bryan\\Documents\\GitHub\\ProjetosPessoais\\StorageProject\\Entrada.cs",
-              "RelativeDocumentMoniker": "Entrada.cs",
-              "ToolTip": "C:\\Users\\bryan\\Documents\\GitHub\\ProjetosPessoais\\StorageProject\\Entrada.cs [Design]",
-              "RelativeToolTip": "Entrada.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-15T16:28:22.385Z",
+              "WhenOpened": "2025-08-16T19:54:30.11Z",
               "EditorCaption": " [Design]"
             }
           ]

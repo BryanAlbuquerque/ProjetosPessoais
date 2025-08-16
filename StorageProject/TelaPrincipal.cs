@@ -33,16 +33,81 @@ namespace StorageProject
 
         private void btnBaixa_Click(object sender, EventArgs e)
         {
-            BaixaSistemica baixaSistema = new BaixaSistemica();
-            baixaSistema.Show();    
-            this.Hide();
+            //Visibilidade para o botão Baixa
+            lblTituloBaixa.Visible = true;
+            lblQtde.Visible = true;
+            lblPallet.Visible = true;
+            txtQtde.Visible = true;
+            txtBaixaPL.Visible = true;
+            btnEnviarBaixa.Visible = true;
+            PicBoxBaixa.Visible = true;
+
+            //Esconde os outros componentes
+            lblTituloEnd.Visible = false;
+            lblPallet2.Visible = false;
+            lblEnd.Visible = false;
+            txtEnderecoPL.Visible = false;
+            txtEnd.Visible = false;
+            btnEnviarEnd.Visible = false;
+            // imgs end!!!
+        }
+
+        private void btnEnviarBaixa_Click(object sender, EventArgs e)
+        {
+            int PalletID = int.Parse(txtBaixaPL.Text);
+            int Quantidade = int.Parse(txtQtde.Text);
+
+            if (string.IsNullOrEmpty(txtBaixaPL.Text))
+            {
+                MessageBox.Show("Erro Existem espaços em Branco!");
+            }
+            else if (BaixasDB.Baixas
+                (PalletID,
+                Quantidade))
+            {
+                MessageBox.Show("Baixa realizada!");
+            }
         }
 
         private void btnEnd_Click(object sender, EventArgs e)
         {
-            Endereco endereco = new Endereco();
-            endereco.Show();
-            this.Hide();
+            //Visibilidade do botão de endereçamento
+            lblTituloEnd.Visible = true;
+            lblPallet2.Visible = true;
+            lblEnd.Visible = true;
+            txtEnderecoPL.Visible = true;
+            txtEnd.Visible = true;
+            btnEnviarEnd.Visible = true;
+
+            //Enconde os outros componentes
+            lblTituloBaixa.Visible = false;
+            lblQtde.Visible = false;
+            lblPallet.Visible = false;
+            txtQtde.Visible = false;
+            txtBaixaPL.Visible = false;
+            btnEnviarBaixa.Visible = false;
+            PicBoxBaixa.Visible = false;
+        }
+
+        private void TelaPrincipal_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnEnviarEnd_Click(object sender, EventArgs e)
+        {
+            int PalletID = int.Parse(txtEnderecoPL.Text);
+            string Endereco = txtEnd.Text;
+
+
+            if (string.IsNullOrEmpty(txtEnderecoPL.Text))
+            {
+                MessageBox.Show("Erro Existem espaços em Branco!");
+            }
+            else if (EnderecoDB.Enderecamento(PalletID, Endereco))
+            {
+                MessageBox.Show("Endereçamento Realizado!");
+            }
         }
     }
 }
