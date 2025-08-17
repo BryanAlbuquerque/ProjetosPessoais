@@ -41,6 +41,9 @@ namespace StorageProject
             txtBaixaPL.Visible = true;
             btnEnviarBaixa.Visible = true;
             PicBoxBaixa.Visible = true;
+            lblFrase.Visible = true;
+            lblFrase2.Visible = true;
+            lblAnotacoes.Visible = true;
 
             //Esconde os outros componentes
             lblTituloEnd.Visible = false;
@@ -49,7 +52,7 @@ namespace StorageProject
             txtEnderecoPL.Visible = false;
             txtEnd.Visible = false;
             btnEnviarEnd.Visible = false;
-            // imgs end!!!
+            PicBoxEnd.Visible = false;
         }
 
         private void btnEnviarBaixa_Click(object sender, EventArgs e)
@@ -78,6 +81,10 @@ namespace StorageProject
             txtEnderecoPL.Visible = true;
             txtEnd.Visible = true;
             btnEnviarEnd.Visible = true;
+            PicBoxEnd.Visible = true;
+            lblFrase.Visible = true;
+            lblFrase2.Visible = true;
+            lblAnotacoes.Visible = true;
 
             //Enconde os outros componentes
             lblTituloBaixa.Visible = false;

@@ -51,8 +51,13 @@
             this.lblPallet2 = new System.Windows.Forms.Label();
             this.lblTituloEnd = new System.Windows.Forms.Label();
             this.PicBoxBaixa = new System.Windows.Forms.PictureBox();
+            this.lblFrase = new System.Windows.Forms.Label();
+            this.lblAnotacoes = new System.Windows.Forms.ListBox();
+            this.PicBoxEnd = new System.Windows.Forms.PictureBox();
+            this.lblFrase2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxBaixa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxEnd)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEntrada
@@ -234,7 +239,7 @@
             // 
             this.btnEnviarEnd.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.btnEnviarEnd.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnviarEnd.Location = new System.Drawing.Point(691, 307);
+            this.btnEnviarEnd.Location = new System.Drawing.Point(251, 322);
             this.btnEnviarEnd.Name = "btnEnviarEnd";
             this.btnEnviarEnd.Size = new System.Drawing.Size(124, 25);
             this.btnEnviarEnd.TabIndex = 75;
@@ -245,7 +250,7 @@
             // 
             // txtEnd
             // 
-            this.txtEnd.Location = new System.Drawing.Point(699, 272);
+            this.txtEnd.Location = new System.Drawing.Point(259, 287);
             this.txtEnd.Name = "txtEnd";
             this.txtEnd.Size = new System.Drawing.Size(100, 20);
             this.txtEnd.TabIndex = 74;
@@ -253,7 +258,7 @@
             // 
             // txtEnderecoPL
             // 
-            this.txtEnderecoPL.Location = new System.Drawing.Point(699, 214);
+            this.txtEnderecoPL.Location = new System.Drawing.Point(259, 229);
             this.txtEnderecoPL.Name = "txtEnderecoPL";
             this.txtEnderecoPL.Size = new System.Drawing.Size(100, 20);
             this.txtEnderecoPL.TabIndex = 73;
@@ -263,7 +268,7 @@
             // 
             this.lblEnd.AutoSize = true;
             this.lblEnd.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnd.Location = new System.Drawing.Point(695, 249);
+            this.lblEnd.Location = new System.Drawing.Point(255, 264);
             this.lblEnd.Name = "lblEnd";
             this.lblEnd.Size = new System.Drawing.Size(86, 18);
             this.lblEnd.TabIndex = 72;
@@ -274,7 +279,7 @@
             // 
             this.lblPallet2.AutoSize = true;
             this.lblPallet2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPallet2.Location = new System.Drawing.Point(697, 193);
+            this.lblPallet2.Location = new System.Drawing.Point(257, 208);
             this.lblPallet2.Name = "lblPallet2";
             this.lblPallet2.Size = new System.Drawing.Size(70, 18);
             this.lblPallet2.TabIndex = 71;
@@ -285,7 +290,7 @@
             // 
             this.lblTituloEnd.AutoSize = true;
             this.lblTituloEnd.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTituloEnd.Location = new System.Drawing.Point(671, 158);
+            this.lblTituloEnd.Location = new System.Drawing.Point(231, 173);
             this.lblTituloEnd.Name = "lblTituloEnd";
             this.lblTituloEnd.Size = new System.Drawing.Size(231, 18);
             this.lblTituloEnd.TabIndex = 70;
@@ -303,11 +308,57 @@
             this.PicBoxBaixa.TabStop = false;
             this.PicBoxBaixa.Visible = false;
             // 
+            // lblFrase
+            // 
+            this.lblFrase.AutoSize = true;
+            this.lblFrase.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFrase.Location = new System.Drawing.Point(644, 352);
+            this.lblFrase.Name = "lblFrase";
+            this.lblFrase.Size = new System.Drawing.Size(275, 15);
+            this.lblFrase.TabIndex = 77;
+            this.lblFrase.Text = "Lembre-se Double check nunca é demais!";
+            this.lblFrase.Visible = false;
+            // 
+            // lblAnotacoes
+            // 
+            this.lblAnotacoes.FormattingEnabled = true;
+            this.lblAnotacoes.Location = new System.Drawing.Point(715, 127);
+            this.lblAnotacoes.Name = "lblAnotacoes";
+            this.lblAnotacoes.Size = new System.Drawing.Size(163, 199);
+            this.lblAnotacoes.TabIndex = 79;
+            this.lblAnotacoes.Visible = false;
+            // 
+            // PicBoxEnd
+            // 
+            this.PicBoxEnd.Image = ((System.Drawing.Image)(resources.GetObject("PicBoxEnd.Image")));
+            this.PicBoxEnd.Location = new System.Drawing.Point(615, 370);
+            this.PicBoxEnd.Name = "PicBoxEnd";
+            this.PicBoxEnd.Size = new System.Drawing.Size(316, 206);
+            this.PicBoxEnd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicBoxEnd.TabIndex = 80;
+            this.PicBoxEnd.TabStop = false;
+            this.PicBoxEnd.Visible = false;
+            // 
+            // lblFrase2
+            // 
+            this.lblFrase2.AutoSize = true;
+            this.lblFrase2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFrase2.Location = new System.Drawing.Point(673, 109);
+            this.lblFrase2.Name = "lblFrase2";
+            this.lblFrase2.Size = new System.Drawing.Size(233, 15);
+            this.lblFrase2.TabIndex = 81;
+            this.lblFrase2.Text = "Use para anotações se necessario:";
+            this.lblFrase2.Visible = false;
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 577);
+            this.Controls.Add(this.lblFrase2);
+            this.Controls.Add(this.PicBoxEnd);
+            this.Controls.Add(this.lblAnotacoes);
+            this.Controls.Add(this.lblFrase);
             this.Controls.Add(this.PicBoxBaixa);
             this.Controls.Add(this.btnEnviarEnd);
             this.Controls.Add(this.txtEnd);
@@ -337,6 +388,7 @@
             this.Load += new System.EventHandler(this.TelaPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxBaixa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicBoxEnd)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -365,5 +417,9 @@
         private System.Windows.Forms.Label lblPallet2;
         private System.Windows.Forms.Label lblTituloEnd;
         private System.Windows.Forms.PictureBox PicBoxBaixa;
+        private System.Windows.Forms.Label lblFrase;
+        private System.Windows.Forms.ListBox lblAnotacoes;
+        private System.Windows.Forms.PictureBox PicBoxEnd;
+        private System.Windows.Forms.Label lblFrase2;
     }
 }
