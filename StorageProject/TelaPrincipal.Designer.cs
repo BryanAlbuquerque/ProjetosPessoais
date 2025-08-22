@@ -55,6 +55,7 @@
             this.lblAnotacoes = new System.Windows.Forms.ListBox();
             this.PicBoxEnd = new System.Windows.Forms.PictureBox();
             this.lblFrase2 = new System.Windows.Forms.Label();
+            this.btnRelatorios = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxBaixa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBoxEnd)).BeginInit();
@@ -67,7 +68,7 @@
             this.btnEntrada.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEntrada.ForeColor = System.Drawing.Color.White;
-            this.btnEntrada.Location = new System.Drawing.Point(12, 207);
+            this.btnEntrada.Location = new System.Drawing.Point(21, 208);
             this.btnEntrada.Name = "btnEntrada";
             this.btnEntrada.Size = new System.Drawing.Size(130, 36);
             this.btnEntrada.TabIndex = 1;
@@ -82,7 +83,7 @@
             this.btnGestao.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGestao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGestao.ForeColor = System.Drawing.Color.White;
-            this.btnGestao.Location = new System.Drawing.Point(12, 145);
+            this.btnGestao.Location = new System.Drawing.Point(18, 78);
             this.btnGestao.Name = "btnGestao";
             this.btnGestao.Size = new System.Drawing.Size(130, 46);
             this.btnGestao.TabIndex = 2;
@@ -97,7 +98,7 @@
             this.btnBaixa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBaixa.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBaixa.ForeColor = System.Drawing.Color.White;
-            this.btnBaixa.Location = new System.Drawing.Point(12, 258);
+            this.btnBaixa.Location = new System.Drawing.Point(21, 261);
             this.btnBaixa.Name = "btnBaixa";
             this.btnBaixa.Size = new System.Drawing.Size(130, 36);
             this.btnBaixa.TabIndex = 3;
@@ -112,9 +113,9 @@
             this.btnEnd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnd.ForeColor = System.Drawing.Color.White;
-            this.btnEnd.Location = new System.Drawing.Point(12, 312);
+            this.btnEnd.Location = new System.Drawing.Point(18, 310);
             this.btnEnd.Name = "btnEnd";
-            this.btnEnd.Size = new System.Drawing.Size(141, 36);
+            this.btnEnd.Size = new System.Drawing.Size(133, 36);
             this.btnEnd.TabIndex = 4;
             this.btnEnd.Text = "Movimentação (Endereçamento)";
             this.btnEnd.UseVisualStyleBackColor = false;
@@ -350,11 +351,27 @@
             this.lblFrase2.Text = "Use para anotações se necessario:";
             this.lblFrase2.Visible = false;
             // 
+            // btnRelatorios
+            // 
+            this.btnRelatorios.BackColor = System.Drawing.Color.Navy;
+            this.btnRelatorios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRelatorios.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRelatorios.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRelatorios.ForeColor = System.Drawing.Color.White;
+            this.btnRelatorios.Location = new System.Drawing.Point(21, 146);
+            this.btnRelatorios.Name = "btnRelatorios";
+            this.btnRelatorios.Size = new System.Drawing.Size(127, 40);
+            this.btnRelatorios.TabIndex = 83;
+            this.btnRelatorios.Text = "Gerar Realtorios";
+            this.btnRelatorios.UseVisualStyleBackColor = false;
+            this.btnRelatorios.Click += new System.EventHandler(this.btnRelatorios_Click);
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(931, 577);
+            this.Controls.Add(this.btnRelatorios);
             this.Controls.Add(this.lblFrase2);
             this.Controls.Add(this.PicBoxEnd);
             this.Controls.Add(this.lblAnotacoes);
@@ -421,5 +438,6 @@
         private System.Windows.Forms.ListBox lblAnotacoes;
         private System.Windows.Forms.PictureBox PicBoxEnd;
         private System.Windows.Forms.Label lblFrase2;
+        private System.Windows.Forms.Button btnRelatorios;
     }
 }

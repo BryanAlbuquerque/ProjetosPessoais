@@ -380,7 +380,6 @@ C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\bin\Debug\System
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\bin\Debug\System.Text.Encodings.Web.xml
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\bin\Debug\System.Text.Json.xml
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\bin\Debug\System.Threading.Tasks.Extensions.xml
-C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\bin\Debug\System.ValueTuple.xml
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\bin\Debug\cs\Microsoft.Data.SqlClient.resources.dll
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\bin\Debug\de\Microsoft.Data.SqlClient.resources.dll
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\bin\Debug\es\Microsoft.Data.SqlClient.resources.dll
@@ -395,7 +394,6 @@ C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\bin\Debug\tr\Mic
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\bin\Debug\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\bin\Debug\zh-Hant\Microsoft.Data.SqlClient.resources.dll
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageProject.csproj.AssemblyReference.cache
-C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageProject.csproj.SuggestedBindingRedirects.cache
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageProject.exe.config
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageProject.CadastroForm.resources
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageProject.Entrada.resources
@@ -408,3 +406,9 @@ C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\Storag
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageP.1E6C7AB5.Up2Date
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageProject.exe
 C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\obj\Debug\StorageProject.pdb
+C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\bin\Debug\Microsoft.Bcl.TimeProvider.dll
+C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\bin\Debug\System.Formats.Asn1.dll
+C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\bin\Debug\System.IO.Pipelines.dll
+C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\bin\Debug\Microsoft.Bcl.TimeProvider.xml
+C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\bin\Debug\System.Formats.Asn1.xml
+C:\Users\bryan\Documents\GitHub\ProjetosPessoais\StorageProject\bin\Debug\System.IO.Pipelines.xml

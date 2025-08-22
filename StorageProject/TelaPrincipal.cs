@@ -28,7 +28,6 @@ namespace StorageProject
         {
             Entrada entrada = new Entrada();
             entrada.Show();
-            this.Hide();
         }
 
         private void btnBaixa_Click(object sender, EventArgs e)
@@ -115,6 +114,13 @@ namespace StorageProject
             {
                 MessageBox.Show("Endereçamento Realizado!");
             }
+        }
+
+        private void btnRelatorios_Click(object sender, EventArgs e)
+        {
+            Relatorios relatorios = new Relatorios();
+            relatorios.Show();
+            this.Hide();
         }
     }
 }
